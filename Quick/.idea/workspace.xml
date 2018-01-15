@@ -15,12 +15,9 @@
       <file leaf-file-name="QuickSort.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/qs/QuickSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-              <folding>
-                <element signature="e#115#116#0" expanded="true" />
-                <element signature="e#145#146#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="756">
+              <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -87,6 +84,12 @@
               <item name="Quick" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Quick" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Quick" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="qs" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -101,6 +104,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CirclularQueue" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -211,12 +215,12 @@
       <option name="presentableId" value="Default" />
       <updated>1516009942560</updated>
       <workItem from="1516009946566" duration="987000" />
-      <workItem from="1516015970273" duration="504000" />
+      <workItem from="1516015970273" duration="4130000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1491000" />
+    <option name="totallyTimeSpent" value="5117000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -265,21 +269,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#115#116#0" expanded="true" />
-            <element signature="e#145#146#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/qs/QuickSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-          <folding>
-            <element signature="e#115#116#0" expanded="true" />
-            <element signature="e#145#146#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="756">
+          <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
