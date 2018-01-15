@@ -8,6 +8,6 @@ public class QuickSort {
     }
 
     public void QuickSort() {
-
+//
     }
 }
