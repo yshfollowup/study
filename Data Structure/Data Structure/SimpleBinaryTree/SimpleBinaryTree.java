@@ -24,12 +24,14 @@ public class SimpleBinaryTree {
                 if (current == null) {
                     current = node;
                     parent.left = current;
+                    break;
                 }
             } else {
                 current = current.right;
                 if (current == null) {
                     current = node;
                     parent.right = current;
+                    break;
                 }
             }
         }
@@ -37,8 +39,47 @@ public class SimpleBinaryTree {
 
     public int removeNode(int input) {
         Node node = new Node(input);
-        Node current = rootNode;
+        Node remove = rootNode;
         Node parent = null;
+
+        while (remove.data != input) {
+            parent = remove;
+            if (remove.data > input) {
+                remove = remove.left;
+            } else {
+                remove = remove.right;
+            }
+        }
+
+        if (remove.left == null && remove.right == null) {       //no child from parent's node
+            if (remove == rootNode) {
+                rootNode = null;
+            } else if (remove == parent.left) {
+                parent.left = null;
+            } else {
+                parent.right = null;
+            }
+        } else if (remove.left == null) {                        //Only right child from parent's node
+            if (remove == rootNode) {
+                rootNode = remove.right;
+            } else if (remove == remove.left) {
+                parent.left = remove.right;
+            } else {
+                parent.right = remove.right;
+            }
+        } else if (remove.right == null) {                      //Only left child from parent's node
+            if (remove == rootNode) {
+                rootNode = remove.left;
+            } else if (remove == remove.left) {
+                parent.left = remove.left;
+            } else {
+                parent.right = remove.left;
+            }
+        } else {
+            Node replace = remove;
+
+        }
+
 
         return 0;
     }
