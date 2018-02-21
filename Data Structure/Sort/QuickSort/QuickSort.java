@@ -1,30 +1,38 @@
-package QuickSort;
+package qs;
 
 public class QuickSort {
-    public int pivot;   //key data for quick sorting
-    public int tmp;
-    public int[] datas;
 
-    public QuickSort(int[] datas) {
-        this.pivot = 0;
-        this.tmp = 0;
-        this.datas = datas;
+    public void QuickSort(int[] datas, int begin, int end) {
+        if (begin < end) {
+            int pivot = Partition(datas, begin, end);
+            QuickSort(datas, begin, pivot - 1);
+            QuickSort(datas, pivot + 1, end);
+        }
     }
 
-    public void Swap(int i, int j) {
-        tmp = i;
-        i = j;
-        j = tmp;
+    public void swap(int[] arr, int x, int y) {
+        int tmp = arr[x];
+        arr[x] = arr[y];
+        arr[y] = tmp;
     }
 
-    public int Partition(int[] datas, int left, int right) {
-        pivot = datas[0];
-        left = 1;
-        right = datas[datas.length - 1];
-        return 0;
-    }
 
-    public void QuickSort() {
+    public int Partition(int[] datas, int begin, int end) {
+        int left = begin;
+        int right = end;
+        int pivot = (left + right) / 2;
 
+        while(left < right) {
+            while(datas[left] < datas[pivot] && (left < right)) {
+                left++;
+            }while (datas[right] >= datas[pivot] && (left < right)) {
+                right--;
+            }
+            if(left < right) {
+               swap(datas, left, right);
+            }
+        }
+        swap(datas, left, right);
+        return left;
     }
 }
