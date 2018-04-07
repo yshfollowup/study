@@ -5,8 +5,8 @@ public class Main {
         LinkedList ll = new LinkedList();
         ll.addHead(10);
         ll.addTail(50);
-        for(int i=1; i<=3; i++){
-            ll.add(i,(i*10)+10);
+        for (int i = 1; i <= 3; i++) {
+            ll.add(i, (i * 10) + 10);
         }
         System.out.println(ll.node(2));
         System.out.println(ll.toString());
